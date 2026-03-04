@@ -1,0 +1,427 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d64bc3aa-05b9-4061-a15b-30aca6e97654" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TBDiscapacidad</ID>
+  <Name>TBDiscapacidad</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="04f93b2a-f6bb-4745-a75a-57b0f37cee62">
+      <ID>DIM VIVIENDA</ID>
+      <Name>DIM VIVIENDA</Name>
+      <DimensionID>DIM VIVIENDA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="207af37e-ea68-41bd-ab3a-3c2737717640">
+          <AttributeID>ID VIVIENDA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0a4476d7-1490-4ca6-98d6-752eb6c264e2">
+      <ID>DIM PROVINCIA</ID>
+      <Name>DIM PROVINCIA</Name>
+      <DimensionID>DIM PROVINCIA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b689141f-9576-4b50-afae-328c39ec5782">
+          <AttributeID>ID PROVINCIA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="81e67767-7700-4862-9df6-fe1590fd63b8">
+      <ID>DIM BARRERA DISCAPACIDAD</ID>
+      <Name>DIM BARRERA DISCAPACIDAD</Name>
+      <DimensionID>DIM BARRERA DISCAPACIDAD</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="efa2475b-7231-41c6-b589-2bec918a1ac1">
+          <AttributeID>ID BARRERA DISCAPACIDAD</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f0c825b-a5a7-46c2-b1e5-d3574ac46a93">
+      <ID>DIM AYUDA BIOMECANICAS</ID>
+      <Name>DIM AYUDA BIOMECANICAS</Name>
+      <DimensionID>DIM AYUDA BIOMECANICAS</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d2edb96a-2fd2-4489-a6ea-407b265f2f6a">
+          <AttributeID>ID AYUDA BIOMECANICAS</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b77142b2-297f-46e1-b416-a0f0ac00a9c6">
+      <ID>DIM INSTITUCIONES</ID>
+      <Name>DIM INSTITUCIONES</Name>
+      <DimensionID>DIM INSTITUCIONES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="e78d9098-64bd-41e8-89d1-731ac82de681">
+          <AttributeID>ID INSTITUCIONES</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="85ec90c6-6290-41e1-b289-4a9b9b1837f1">
+      <ID>DIM DISCAPACIDADES</ID>
+      <Name>DIM DISCAPACIDADES</Name>
+      <DimensionID>DIM DISCAPACIDADES</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="75c71fce-2c46-4de8-bd03-5e73f24553f4">
+          <AttributeID>ID DISCAPACIDADES</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7915a9a4-91de-4e8b-8f4d-5a4b1197bc7f">
+      <ID>DIM DISTRITO</ID>
+      <Name>DIM DISTRITO</Name>
+      <DimensionID>DIM DISTRITO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b6ecf31-1c99-4146-9b2c-d6d59802754e">
+          <AttributeID>ID DISTRITO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0765d2ad-ecc9-43ae-a107-4b99819b8888">
+      <ID>DIM TIPO VIVIENDA</ID>
+      <Name>DIM TIPO VIVIENDA</Name>
+      <DimensionID>DIM TIPO VIVIENDA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c77ae8ff-a9d2-41e5-ba5f-390e5f936e09">
+          <AttributeID>ID TIPO VIVIENDA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3e0a7f75-95b9-4639-9f42-b1a0570c2860">
+      <ID>DIM METODO COMUNICACION</ID>
+      <Name>DIM METODO COMUNICACION</Name>
+      <DimensionID>DIM METODO COMUNICACION</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c6f276bc-ef0e-4da8-acb0-511362c6d51a">
+          <AttributeID>ID METODO COMUNICACION</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="87ff6e82-1357-4542-9285-729ad6b647cb">
+      <ID>DIM CARRERA</ID>
+      <Name>DIM CARRERA</Name>
+      <DimensionID>DIM CARRERA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0b7c2760-c8b4-4af5-b3df-b6512e63a75a">
+          <AttributeID>ID CARRERA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ce0438e6-1861-4021-98f7-f59748011349">
+      <ID>DIM GRADO ACADEMICO</ID>
+      <Name>DIM GRADO ACADEMICO</Name>
+      <DimensionID>DIM GRADO ACADEMICO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="55a8771d-a42f-4f8a-ae06-129679df62b4">
+          <AttributeID>ID GRADO ACADEMICO</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1a360326-6ca0-4769-a31a-7100bdd7b148">
+      <ID>DIM LUGAR BARRERA</ID>
+      <Name>DIM LUGAR BARRERA</Name>
+      <DimensionID>DIM LUGAR BARRERA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8c95c58e-7efd-47c6-9d88-71a607f86f47">
+          <AttributeID>ID LUGAR BARRERA</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="bd7baba3-cc54-48a1-982c-7340786a1295">
+      <ID>FACT PERSONA DISCAPACITADO</ID>
+      <Name>FACT PERSONA DISCAPACITADO</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="c3d56457-9c0e-45c8-8504-3d44ec837ddd">
+          <ID>Recuento FACT PERSONA DISCAPACITADO</ID>
+          <Name>Recuento FACT PERSONA DISCAPACITADO</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ec814bf1-2162-4b6c-9e67-b6d3887a9d90">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="19ad7e01-d37e-4e6a-a830-cc94a1f7a94d">
+              <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6ae66194-46e1-475c-a268-7f2d372ab3e1">
+          <CubeDimensionID>DIM VIVIENDA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8540f580-41f8-4c11-8684-3098fe25b68b">
+              <AttributeID>ID VIVIENDA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1593f028-e2e0-4099-82cb-82522f843375">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2dedc0b8-4476-4e19-8276-5d6aeb392029">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_VIVIENDA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3980e9b2-d203-4aa2-94e9-a9a9c6bd337f">
+          <CubeDimensionID>DIM PROVINCIA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9a30c28a-1c2e-42ff-ae89-5da3662fc8e8">
+              <AttributeID>ID PROVINCIA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b73558a0-2ce8-46e4-87fe-77212da681be">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cbdb9251-49c0-4d43-9c97-f9206a9ea093">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_PROVINCIA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3bc7ce33-fc59-4252-a95e-c8e0f4b42916">
+          <CubeDimensionID>DIM BARRERA DISCAPACIDAD</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8127afd1-c30e-47e4-b625-2707bae0df88">
+              <AttributeID>ID BARRERA DISCAPACIDAD</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e0575cd1-d6c8-4c3a-875c-f30cacb3e45b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c8885698-4d95-456e-baab-aaa8ee1c516c">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_BARRERA_DISCAPACIDAD</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bfbfa203-c7a6-4061-8799-6c1d72ecace3">
+          <CubeDimensionID>DIM AYUDA BIOMECANICAS</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e08fe5cd-cc20-4dff-82a4-48403a4a4f2b">
+              <AttributeID>ID AYUDA BIOMECANICAS</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b59eb17d-f586-4cd3-94c1-d2f980373fda">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0fb2fb2b-c86c-461a-bf8a-b5aba04c7d8a">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_AYUDA_BIOMECANICAS</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d202f49-af97-4ccb-8908-94d75b1bcfab">
+          <CubeDimensionID>DIM INSTITUCIONES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f0c6815b-4e85-4a58-9f0f-26e24f86dbf3">
+              <AttributeID>ID INSTITUCIONES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b39e03d3-a387-4406-b6f0-b4a8d14cf97a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2849a59-506d-4456-9314-77c6ff0c947b">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_INSTITUCIONES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3b8b89be-7d00-4a83-a2cf-05e8f68a3385">
+          <CubeDimensionID>DIM DISCAPACIDADES</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cb895df9-4691-4274-92e8-1834b8300518">
+              <AttributeID>ID DISCAPACIDADES</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3cbf8f7e-030c-4dcc-b11c-6f5ad25a44e8">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2b7ab81a-236b-43bd-91ef-a8d3d6e6a095">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_DISCAPACIDADES</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c790be1-3b37-4873-9eea-5ad917bfcea8">
+          <CubeDimensionID>DIM DISTRITO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="74a49895-8173-4488-a425-a96b508a0b74">
+              <AttributeID>ID DISTRITO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2e300625-946f-449b-8c0e-bec697822efc">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cbcedb58-bdb6-48e6-8eba-75e8afe620e5">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_DISTRITO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="11329266-6452-407f-8830-cc36c76268f3">
+          <CubeDimensionID>DIM TIPO VIVIENDA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0d653d1a-efc2-49fe-acca-bc36af8b0afb">
+              <AttributeID>ID TIPO VIVIENDA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e5284c47-f1d3-40cc-b8e2-d412a7483004">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1859ff87-9590-473e-8e18-74a12a1e3f40">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_TIPO_VIVIENDA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4f2f3e1f-f8b5-4296-8bcc-147e06fdb7d6">
+          <CubeDimensionID>DIM METODO COMUNICACION</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="24e59232-6ec0-4b17-898c-de1cd7ca4fb5">
+              <AttributeID>ID METODO COMUNICACION</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f1fd0c7a-20eb-4933-ab1b-e5d43df20f09">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f71b582b-4032-40fe-b0b0-da451839add7">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_METODO_COMUNICACION</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="347df45a-6f69-4283-b012-8147d8eced07">
+          <CubeDimensionID>DIM CARRERA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7cdb750d-12d3-4519-8b85-dc98a1b62c22">
+              <AttributeID>ID CARRERA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="84a32510-0c27-434e-a85e-c5ba73121784">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dfcf78ff-fdac-4be5-a446-bd6327554602">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_CARRERA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8c614e4c-f7ea-4f5b-8660-e8b9ca15dbcb">
+          <CubeDimensionID>DIM GRADO ACADEMICO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2b199ec5-0137-486c-a571-be0360fb3750">
+              <AttributeID>ID GRADO ACADEMICO</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="553b31bc-3441-443f-ba98-87941bbec4dc">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4719896f-b8af-417f-851b-7a3deebd84d0">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_GRADO_ACADEMICO</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c8e47ad3-9ec9-412f-bbaa-b9a993a742f3">
+          <CubeDimensionID>DIM LUGAR BARRERA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7c902ca5-52ea-41cd-b119-9a98e7d14f21">
+              <AttributeID>ID LUGAR BARRERA</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d8a027a0-df37-4bc6-aa6d-a584ad80ff75">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="43312be5-3f21-489f-8ca5-16dce79b04db">
+                    <TableID>dbo_FACT_PERSONA_DISCAPACITADO</TableID>
+                    <ColumnID>ID_LUGAR_BARRERA</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="721f88de-9b4f-47cb-9cda-49aaa125d44f">
+    <DataSourceViewID>TBDiscapacidad</DataSourceViewID>
+  </Source>
+</Cube>

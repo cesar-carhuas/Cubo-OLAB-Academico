@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboDiscapacitado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{422D90EC-625B-ED01-B86E-E577494753DF}|CuboDiscapacitado.dwproj|C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboDiscapacitado\\TBDiscapacidad.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{422D90EC-625B-ED01-B86E-E577494753DF}|CuboDiscapacitado.dwproj|solutionrelative:TBDiscapacidad.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TBDiscapacidad.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboDiscapacitado\\TBDiscapacidad.cube",
+              "RelativeDocumentMoniker": "TBDiscapacidad.cube",
+              "ToolTip": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboDiscapacitado\\TBDiscapacidad.cube [Dise\u00F1o]",
+              "RelativeToolTip": "TBDiscapacidad.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-03T05:44:32.954Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

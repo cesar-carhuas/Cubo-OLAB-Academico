@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboAnemia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C218FB15-5851-4EDC-5945-4737E89596D1}|CuboAnemia.dwproj|C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboAnemia\\Anemia.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{C218FB15-5851-4EDC-5945-4737E89596D1}|CuboAnemia.dwproj|solutionrelative:Anemia.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Anemia.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboAnemia\\Anemia.cube",
+              "RelativeDocumentMoniker": "Anemia.cube",
+              "ToolTip": "C:\\Users\\CESAR\\OneDrive\\Escritorio\\carrera ADM.DE SISTEMA\\zegel\\6to ciclo\\ETL\\CuboAnemia\\Anemia.cube [Dise\u00F1o]",
+              "RelativeToolTip": "Anemia.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-03T17:29:00.798Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CuboAnemia</Database>
+    <Server>LAPTOP-7LQUEKQ5\SQLSERVER</Server>
+    <ConnectionString>Data Source=LAPTOP-7LQUEKQ5\SQLSERVER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>GPqrUXalTLlaesJ3lm5Dey/Me/M=3/01/2026 12:23:153/01/2026 12:23:15</TimeStamp>
+        <ID>
+          <String>Anemia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>/QErl3EKKom/8hDeo6meXs8+bjA=3/01/2026 12:23:443/01/2026 12:23:44</TimeStamp>
+        <ID>
+          <String>Anemia</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b1resV38aHYz2+q/tTOfNPMAYfQ=3/01/2026 12:24:063/01/2026 12:24:06</TimeStamp>
+        <ID>
+          <String>DIM DIAGNOSTICO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3jMvs+lftF5Xx9z8LpTmtlZsKkM=3/01/2026 12:24:203/01/2026 12:24:20</TimeStamp>
+        <ID>
+          <String>DIM DISTRITO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q7DsaZ6veE/kKe957kmj+zlEp9U=3/01/2026 12:24:313/01/2026 12:24:31</TimeStamp>
+        <ID>
+          <String>DIM ESTABLECIMIENTO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zNivqoaWJRMI0cH27uGQRIcfio0=3/01/2026 12:25:253/01/2026 12:25:25</TimeStamp>
+        <ID>
+          <String>DIM ETNIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lnPH14AFkoCXTr32gK+bxXUJOt4=3/01/2026 12:25:373/01/2026 12:25:37</TimeStamp>
+        <ID>
+          <String>DIM PROVINCIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JZmB250ILx9cZR+lw/sBEg8fxt0=3/01/2026 12:25:523/01/2026 12:25:52</TimeStamp>
+        <ID>
+          <String>DIM SEGURO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ed9XGYTsLu71ho7ZDQ55ya1u2BQ=3/01/2026 12:26:043/01/2026 12:26:04</TimeStamp>
+        <ID>
+          <String>DIM SEVERIDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Msv1Ix6XVd5/oXV6t6vJawID+lo=3/01/2026 12:28:123/01/2026 12:27:37</TimeStamp>
+        <ID>
+          <String>DIM TIEMPO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>nW7rhQOnikgK/zgNtOGgVSAt48Q=3/01/2026 12:29:003/01/2026 12:29:005skimvSbTiQ3gHf9kJkl+O1Jw6E=3/01/2026 12:29:003/01/2026 12:29:00</TimeStamp>
+        <ID>
+          <String>Anemia</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>O5i6SmjY3zCwm2Y8n/bs1qg2ZKw=3/01/2026 12:20:203/01/2026 12:20:19</TimeStamp>
+      <ID>
+        <String>CuboAnemia</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-01-03T17:29:22.793333Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,250 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dcec7a40-fd5d-4548-bc41-f950d0a7b683" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Anemia</ID>
+  <Name>Anemia</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Anemia</DataSourceID>
+  <Schema>
+    <xs:schema id="Anemia" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Anemia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="cd12f975-86af-4c99-8f54-c815f861916e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_DIAGNOSTICO" msprop:DbTableName="DIM_DIAGNOSTICO" msprop:FriendlyName="DIM_DIAGNOSTICO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="33e6b0b5-7a08-4da3-8312-8b76f980fbf1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_diagnostico" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_diagnostico" msprop:DbColumnName="id_diagnostico" msprop:design-time-name="f9415466-23bb-4510-95f9-5e29303e6450" type="xs:int" />
+                  <xs:element name="diagnostico" msprop:FriendlyName="diagnostico" msprop:DbColumnName="diagnostico" msprop:design-time-name="7ec44aeb-969a-4c5b-ba2d-863d1a463855" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DISTRITO" msprop:DbTableName="DIM_DISTRITO" msprop:FriendlyName="DIM_DISTRITO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="29619ad8-5167-4038-b9a0-9d5159114d5b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_distrito" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_distrito" msprop:DbColumnName="id_distrito" msprop:design-time-name="6892519d-c81a-417c-9fe1-d8ecdd63bc7a" type="xs:int" />
+                  <xs:element name="distrito" msprop:FriendlyName="distrito" msprop:DbColumnName="distrito" msprop:design-time-name="d1f55273-419a-4e45-9411-f413fff4fdd5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_ESTABLECIMIENTO" msprop:DbTableName="DIM_ESTABLECIMIENTO" msprop:FriendlyName="DIM_ESTABLECIMIENTO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="09a6178c-7afd-4881-b567-3fdecf8690ed">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="codigo_unico" msprop:FriendlyName="codigo_unico" msprop:DbColumnName="codigo_unico" msprop:design-time-name="de890e7b-30c9-46e2-b44f-d742e5a54d83" type="xs:int" />
+                  <xs:element name="nombre_establecimiento" msprop:FriendlyName="nombre_establecimiento" msprop:DbColumnName="nombre_establecimiento" msprop:design-time-name="adddf56b-0b0c-4630-ab6f-6e18f5294ff6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_ETNIA" msprop:DbTableName="DIM_ETNIA" msprop:FriendlyName="DIM_ETNIA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a4a44cab-38a2-4405-8daf-63d0ab3bdf41">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_etnia" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_etnia" msprop:DbColumnName="id_etnia" msprop:design-time-name="141e3197-bca9-4e1e-8408-bc3ea2159c0d" type="xs:int" />
+                  <xs:element name="etnia" msprop:FriendlyName="etnia" msprop:DbColumnName="etnia" msprop:design-time-name="cc9b03a9-0126-4222-85bf-308358b55b74" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_PROVINCIA" msprop:DbTableName="DIM_PROVINCIA" msprop:FriendlyName="DIM_PROVINCIA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c2cd45c0-af88-4286-bc79-a5d831b2060f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_provincia" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_provincia" msprop:DbColumnName="id_provincia" msprop:design-time-name="bd1ec265-3e00-489b-b47f-06d26dbbd8b9" type="xs:int" />
+                  <xs:element name="provincia" msprop:FriendlyName="provincia" msprop:DbColumnName="provincia" msprop:design-time-name="6200fc07-0748-45ca-ad70-4c332ac6d914" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_SEGURO" msprop:DbTableName="DIM_SEGURO" msprop:FriendlyName="DIM_SEGURO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b18beba6-1331-47e4-af26-bc5813689cc9">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_seguro" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_seguro" msprop:DbColumnName="id_seguro" msprop:design-time-name="628b44ab-42a9-48f6-a86d-81b22f98bd5b" type="xs:int" />
+                  <xs:element name="seguro" msprop:FriendlyName="seguro" msprop:DbColumnName="seguro" msprop:design-time-name="90d2130e-bb3e-4143-bc6e-e434b13182cf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_SEVERIDAD" msprop:DbTableName="DIM_SEVERIDAD" msprop:FriendlyName="DIM_SEVERIDAD" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a1c64897-199d-47f2-8d15-b609a4047d91">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_severidad" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_severidad" msprop:DbColumnName="id_severidad" msprop:design-time-name="83230eff-c4df-49e4-9ef7-947dd77ac1fb" type="xs:int" />
+                  <xs:element name="severidad" msprop:FriendlyName="severidad" msprop:DbColumnName="severidad" msprop:design-time-name="541b7c8b-e9a4-451d-bf86-675f33b093dc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIEMPO" msprop:DbTableName="DIM_TIEMPO" msprop:FriendlyName="DIM_TIEMPO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e0d6c687-c51d-48b2-b496-e808bf25f33f">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_tiempo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_tiempo" msprop:DbColumnName="id_tiempo" msprop:design-time-name="a0d7ece1-4c96-46ab-968a-3f210536e91b" type="xs:int" />
+                  <xs:element name="dia" msprop:FriendlyName="dia" msprop:DbColumnName="dia" msprop:design-time-name="eb907297-8d1a-4cdc-aac2-5a0621f98524" type="xs:int" minOccurs="0" />
+                  <xs:element name="mes" msprop:FriendlyName="mes" msprop:DbColumnName="mes" msprop:design-time-name="d7c470fd-7124-4e42-a2b4-0b3f39ab0e58" type="xs:int" minOccurs="0" />
+                  <xs:element name="years" msprop:FriendlyName="years" msprop:DbColumnName="years" msprop:design-time-name="fbd628d6-59d1-493d-901c-4eb828e2dee9" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_PACIENTE_ANEMIA" msprop:DbTableName="FACT_PACIENTE_ANEMIA" msprop:FriendlyName="FACT_PACIENTE_ANEMIA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="cf368282-303e-49fa-867f-56daa766f281">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PK_registro" msprop:FriendlyName="PK_registro" msprop:DbColumnName="PK_registro" msprop:design-time-name="278fb237-3c3b-410b-aeaa-ca3da2e8ed4b" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_tiempo" msprop:FriendlyName="id_tiempo" msprop:DbColumnName="id_tiempo" msprop:design-time-name="a6bd9cae-00ab-48dd-b510-d33705e9a415" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_provincia" msprop:FriendlyName="id_provincia" msprop:DbColumnName="id_provincia" msprop:design-time-name="af8a4d51-f0b2-4219-b216-7b1969b17b36" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_distrito" msprop:FriendlyName="id_distrito" msprop:DbColumnName="id_distrito" msprop:design-time-name="c50a404e-4190-42ab-af55-5f8b9e79c2ae" type="xs:int" minOccurs="0" />
+                  <xs:element name="codigo_unico" msprop:FriendlyName="codigo_unico" msprop:DbColumnName="codigo_unico" msprop:design-time-name="ae4f034a-9988-4253-bd90-0dfe6d815cb9" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_severidad" msprop:FriendlyName="id_severidad" msprop:DbColumnName="id_severidad" msprop:design-time-name="49faad13-3ba4-48a5-8088-6438eee7b4d8" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_diagnostico" msprop:FriendlyName="id_diagnostico" msprop:DbColumnName="id_diagnostico" msprop:design-time-name="71b89fcc-532e-4518-9e84-a94af27cebce" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_seguro" msprop:FriendlyName="id_seguro" msprop:DbColumnName="id_seguro" msprop:design-time-name="b9c842ff-ea72-49b5-bcf7-380ea4087b6e" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_etnia" msprop:FriendlyName="id_etnia" msprop:DbColumnName="id_etnia" msprop:design-time-name="adb3230b-1e1e-4be9-a077-6988d6a51347" type="xs:int" minOccurs="0" />
+                  <xs:element name="genero" msprop:FriendlyName="genero" msprop:DbColumnName="genero" msprop:design-time-name="7741d988-0520-423c-9f8e-da68c4da7781" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="edad" msprop:FriendlyName="edad" msprop:DbColumnName="edad" msprop:design-time-name="1bd77c30-ba82-4755-a89c-bb6257c29421" type="xs:int" minOccurs="0" />
+                  <xs:element name="cantidad" msprop:FriendlyName="cantidad" msprop:DbColumnName="cantidad" msprop:design-time-name="34fe9af0-006d-4395-a0de-a4fd1159a3bd" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DIAGNOSTICO" />
+          <xs:field xpath="id_diagnostico" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DISTRITO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DISTRITO" />
+          <xs:field xpath="id_distrito" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_ESTABLECIMIENTO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ESTABLECIMIENTO" />
+          <xs:field xpath="codigo_unico" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_ETNIA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_ETNIA" />
+          <xs:field xpath="id_etnia" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_PROVINCIA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_PROVINCIA" />
+          <xs:field xpath="id_provincia" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_SEGURO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_SEGURO" />
+          <xs:field xpath="id_seguro" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_SEVERIDAD_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_SEVERIDAD" />
+          <xs:field xpath="id_severidad" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIEMPO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIEMPO" />
+          <xs:field xpath="id_tiempo" />
+        </xs:unique>
+        <xs:keyref name="FK__FACT_PACI__codig__68487DD7" refer="dbo_DIM_ESTABLECIMIENTO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="codigo_unico" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_se__6B24EA82" refer="dbo_DIM_SEGURO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_seguro" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_et__6C190EBB" refer="dbo_DIM_ETNIA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_etnia" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_ti__656C112C" refer="dbo_DIM_TIEMPO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_tiempo" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_pr__66603565" refer="dbo_DIM_PROVINCIA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_provincia" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_di__6A30C649" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_diagnostico" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_di__6754599E" refer="dbo_DIM_DISTRITO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_distrito" />
+        </xs:keyref>
+        <xs:keyref name="FK__FACT_PACI__id_se__693CA210" refer="dbo_DIM_SEVERIDAD_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PACIENTE_ANEMIA" />
+          <xs:field xpath="id_severidad" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Anemia xmlns="" />
+  </Schema>
+</DataSourceView>

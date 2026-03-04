@@ -1,0 +1,420 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4c105fc7-7987-453c-8be4-c97f590f3bbd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>TBDiscapacidad</ID>
+  <Name>TBDiscapacidad</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>CBDiscapacidad</DataSourceID>
+  <Schema>
+    <xs:schema id="TBDiscapacidad" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="TBDiscapacidad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0f7bad84-4dd1-48fb-bdf7-6a3fe4d5b1ec">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_AYUDA_BIOMECANICAS" msprop:DbTableName="DIM_AYUDA_BIOMECANICAS" msprop:FriendlyName="DIM_AYUDA_BIOMECANICAS" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="72c68c6e-9c00-4aee-a8cf-56b8ba29498e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_AYUDA_BIOMECANICAS" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_AYUDA_BIOMECANICAS" msprop:DbColumnName="ID_AYUDA_BIOMECANICAS" msprop:design-time-name="7ed28127-6402-4ace-80e5-1e83ca41c664" type="xs:int" />
+                  <xs:element name="AYUDA_BIOMECANICAS" msprop:FriendlyName="AYUDA_BIOMECANICAS" msprop:DbColumnName="AYUDA_BIOMECANICAS" msprop:design-time-name="d08e5512-718e-4a31-b815-90e5ad30e9f1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_BARRERA_DISCAPACIDAD" msprop:DbTableName="DIM_BARRERA_DISCAPACIDAD" msprop:FriendlyName="DIM_BARRERA_DISCAPACIDAD" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7505aa36-9816-4c14-9df6-9f9e57b6f46b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_BARRERA_DISCAPACIDAD" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_BARRERA_DISCAPACIDAD" msprop:DbColumnName="ID_BARRERA_DISCAPACIDAD" msprop:design-time-name="3530e1e3-fd09-4b0d-aed3-a33acc18e6a7" type="xs:int" />
+                  <xs:element name="BARRERA_DISCAPACIDAD" msprop:FriendlyName="BARRERA_DISCAPACIDAD" msprop:DbColumnName="BARRERA_DISCAPACIDAD" msprop:design-time-name="6fc5fda4-3fdc-4314-8317-881dbf9da015" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_CARRERA" msprop:DbTableName="DIM_CARRERA" msprop:FriendlyName="DIM_CARRERA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c7ff1911-244d-4e9a-b99b-3bdce18da7d1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_CARRERA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_CARRERA" msprop:DbColumnName="ID_CARRERA" msprop:design-time-name="270a5743-7620-4ec1-857e-e43dc68c11c6" type="xs:int" />
+                  <xs:element name="CARRERA" msprop:FriendlyName="CARRERA" msprop:DbColumnName="CARRERA" msprop:design-time-name="0003f0f3-fdd5-4f36-a917-b40baf960416" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DISCAPACIDADES" msprop:DbTableName="DIM_DISCAPACIDADES" msprop:FriendlyName="DIM_DISCAPACIDADES" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="98930365-1456-4905-9ff4-4bc4e78462cc">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_DISCAPACIDADES" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_DISCAPACIDADES" msprop:DbColumnName="ID_DISCAPACIDADES" msprop:design-time-name="d2a9c1bd-6fb1-4091-a716-391b7f8bcbc9" type="xs:int" />
+                  <xs:element name="DISCAPACIDADES" msprop:FriendlyName="DISCAPACIDADES" msprop:DbColumnName="DISCAPACIDADES" msprop:design-time-name="7966852e-39c6-4197-ac77-c3c0cd55a82e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DISTRITO" msprop:DbTableName="DIM_DISTRITO" msprop:FriendlyName="DIM_DISTRITO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f6495a95-1a15-4c6b-ad1f-778f5a3881fe">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_DISTRITO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_DISTRITO" msprop:DbColumnName="ID_DISTRITO" msprop:design-time-name="769165e6-bd62-48d4-aac4-dbacb80d03cc" type="xs:int" />
+                  <xs:element name="DISTRITO" msprop:FriendlyName="DISTRITO" msprop:DbColumnName="DISTRITO" msprop:design-time-name="0c3672eb-b74c-4746-b6f2-309a5ecb9940" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_GRADO_ACADEMICO" msprop:DbTableName="DIM_GRADO_ACADEMICO" msprop:FriendlyName="DIM_GRADO_ACADEMICO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f5b2b879-2db4-49a5-a63e-c02ae8ec4f3e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_GRADO_ACADEMICO" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_GRADO_ACADEMICO" msprop:DbColumnName="ID_GRADO_ACADEMICO" msprop:design-time-name="8fd54307-7166-4946-83d2-8ee23857f3ec" type="xs:int" />
+                  <xs:element name="GRADO_ACADEMICO" msprop:FriendlyName="GRADO_ACADEMICO" msprop:DbColumnName="GRADO_ACADEMICO" msprop:design-time-name="cd412330-64bf-45b5-8523-42fea502eb63" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_INSTITUCIONES" msprop:DbTableName="DIM_INSTITUCIONES" msprop:FriendlyName="DIM_INSTITUCIONES" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f15784a9-a06e-4fad-afd6-eb88a4a2f55c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_INSTITUCIONES" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_INSTITUCIONES" msprop:DbColumnName="ID_INSTITUCIONES" msprop:design-time-name="6ee786a1-0871-459b-9d62-ed52d57b080c" type="xs:int" />
+                  <xs:element name="INSTITUCIONES" msprop:FriendlyName="INSTITUCIONES" msprop:DbColumnName="INSTITUCIONES" msprop:design-time-name="0c514dbb-5e7d-4daa-808e-1636550d5435" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_LUGAR_BARRERA" msprop:DbTableName="DIM_LUGAR_BARRERA" msprop:FriendlyName="DIM_LUGAR_BARRERA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e51da591-3e69-43c8-b505-6126f15bb110">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_LUGAR_BARRERA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_LUGAR_BARRERA" msprop:DbColumnName="ID_LUGAR_BARRERA" msprop:design-time-name="e602d8f0-a60a-40c9-a15d-abd0c44b3048" type="xs:int" />
+                  <xs:element name="LUGAR_BARRERA" msprop:FriendlyName="LUGAR_BARRERA" msprop:DbColumnName="LUGAR_BARRERA" msprop:design-time-name="0160830c-d641-4fd8-8005-36fdff3928bc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_METODO_COMUNICACION" msprop:DbTableName="DIM_METODO_COMUNICACION" msprop:FriendlyName="DIM_METODO_COMUNICACION" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d0c91940-521d-4219-be9c-005299936d6a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_METODO_COMUNICACION" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_METODO_COMUNICACION" msprop:DbColumnName="ID_METODO_COMUNICACION" msprop:design-time-name="224b6945-6d2a-4653-896b-8cca862c34a3" type="xs:int" />
+                  <xs:element name="METODO_COMUNICACION" msprop:FriendlyName="METODO_COMUNICACION" msprop:DbColumnName="METODO_COMUNICACION" msprop:design-time-name="2c4e8136-8870-4df2-a420-d3fd8a977c3b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_PROVINCIA" msprop:DbTableName="DIM_PROVINCIA" msprop:FriendlyName="DIM_PROVINCIA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6295b769-c794-4d84-91da-b9fb4b9c602a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_PROVINCIA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_PROVINCIA" msprop:DbColumnName="ID_PROVINCIA" msprop:design-time-name="14ec6736-f27e-48a2-83a3-ba6a8a734f78" type="xs:int" />
+                  <xs:element name="PROVINCIA" msprop:FriendlyName="PROVINCIA" msprop:DbColumnName="PROVINCIA" msprop:design-time-name="9a24993f-882e-4085-8c53-a489668b167e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_TIPO_VIVIENDA" msprop:DbTableName="DIM_TIPO_VIVIENDA" msprop:FriendlyName="DIM_TIPO_VIVIENDA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1e9189bf-0c88-4e8d-ac61-380921c6228d">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_TIPO_VIVIENDA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_TIPO_VIVIENDA" msprop:DbColumnName="ID_TIPO_VIVIENDA" msprop:design-time-name="e579e8f1-9ede-4888-a956-70100b4636f5" type="xs:int" />
+                  <xs:element name="TIPO_VIVIENDA" msprop:FriendlyName="TIPO_VIVIENDA" msprop:DbColumnName="TIPO_VIVIENDA" msprop:design-time-name="40f94274-4a25-4fd2-b547-92ac5a7d0657" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_VIVIENDA" msprop:DbTableName="DIM_VIVIENDA" msprop:FriendlyName="DIM_VIVIENDA" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="2684afae-8070-4c92-92ed-6da8816b77c2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_VIVIENDA" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_VIVIENDA" msprop:DbColumnName="ID_VIVIENDA" msprop:design-time-name="b3395fb2-7bd8-43f2-8212-410819d67d09" type="xs:int" />
+                  <xs:element name="VIVIENDA" msprop:FriendlyName="VIVIENDA" msprop:DbColumnName="VIVIENDA" msprop:design-time-name="e2c2fa05-9b38-4fb6-9d2b-5d528c23a99a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_PERSONA_DISCAPACITADO" msprop:DbTableName="FACT_PERSONA_DISCAPACITADO" msprop:FriendlyName="FACT_PERSONA_DISCAPACITADO" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="5dc3a131-f2d6-499d-bebd-43c0cdd25b6a">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_PERSONA_DISCAPACITADO" msprop:FriendlyName="ID_PERSONA_DISCAPACITADO" msprop:DbColumnName="ID_PERSONA_DISCAPACITADO" msprop:design-time-name="d7e0ce16-1d6b-427e-9ad6-78d2fe5a6a0c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_PROVINCIA" msprop:FriendlyName="ID_PROVINCIA" msprop:DbColumnName="ID_PROVINCIA" msprop:design-time-name="468edd86-e4bc-4c5f-8fb5-4c1c6a4d1753" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_DISTRITO" msprop:FriendlyName="ID_DISTRITO" msprop:DbColumnName="ID_DISTRITO" msprop:design-time-name="fd6e33f7-3eaf-4861-bb58-8e8e55848f64" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_VIVIENDA" msprop:FriendlyName="ID_VIVIENDA" msprop:DbColumnName="ID_VIVIENDA" msprop:design-time-name="ea51af4b-ce53-4555-92df-9949127e02c3" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_TIPO_VIVIENDA" msprop:FriendlyName="ID_TIPO_VIVIENDA" msprop:DbColumnName="ID_TIPO_VIVIENDA" msprop:design-time-name="45ca0db8-6620-4f23-a4f8-ebbe4ff304ae" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_GRADO_ACADEMICO" msprop:FriendlyName="ID_GRADO_ACADEMICO" msprop:DbColumnName="ID_GRADO_ACADEMICO" msprop:design-time-name="aba6d574-faeb-4d6c-963c-2dc7454f45bf" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_CARRERA" msprop:FriendlyName="ID_CARRERA" msprop:DbColumnName="ID_CARRERA" msprop:design-time-name="65f280c2-9360-4901-838d-0dfc6455ef88" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_INSTITUCIONES" msprop:FriendlyName="ID_INSTITUCIONES" msprop:DbColumnName="ID_INSTITUCIONES" msprop:design-time-name="1e9a2e31-3ae7-4d16-8dab-82f9614e303b" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_DISCAPACIDADES" msprop:FriendlyName="ID_DISCAPACIDADES" msprop:DbColumnName="ID_DISCAPACIDADES" msprop:design-time-name="9660c630-c940-48c6-b90c-e80008e982cc" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_BARRERA_DISCAPACIDAD" msprop:FriendlyName="ID_BARRERA_DISCAPACIDAD" msprop:DbColumnName="ID_BARRERA_DISCAPACIDAD" msprop:design-time-name="69bc6211-3ad0-4aa7-902c-b1d192b7e16a" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_LUGAR_BARRERA" msprop:FriendlyName="ID_LUGAR_BARRERA" msprop:DbColumnName="ID_LUGAR_BARRERA" msprop:design-time-name="ca4ed045-842d-4d5b-8273-e3f3f1c2c3b5" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_AYUDA_BIOMECANICAS" msprop:FriendlyName="ID_AYUDA_BIOMECANICAS" msprop:DbColumnName="ID_AYUDA_BIOMECANICAS" msprop:design-time-name="ccc3a5db-0d8c-4005-9f2a-b4eee5e25011" type="xs:int" minOccurs="0" />
+                  <xs:element name="ID_METODO_COMUNICACION" msprop:FriendlyName="ID_METODO_COMUNICACION" msprop:DbColumnName="ID_METODO_COMUNICACION" msprop:design-time-name="a08d3372-72c8-4fa2-8499-777ece7b871e" type="xs:int" minOccurs="0" />
+                  <xs:element name="SEXO" msprop:FriendlyName="SEXO" msprop:DbColumnName="SEXO" msprop:design-time-name="bed87bea-9d14-497a-8a1f-aa42ffeda70e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ESTADO_CIVIL" msprop:FriendlyName="ESTADO_CIVIL" msprop:DbColumnName="ESTADO_CIVIL" msprop:design-time-name="191938cb-2681-4ec3-a829-4b269efbd1b1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MIEMBROS_DE_FAMILIA" msprop:FriendlyName="MIEMBROS_DE_FAMILIA" msprop:DbColumnName="MIEMBROS_DE_FAMILIA" msprop:design-time-name="fa31f5e5-1757-4f3a-bbf0-6167b388826b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SITUACION_LABORAL" msprop:FriendlyName="SITUACION_LABORAL" msprop:DbColumnName="SITUACION_LABORAL" msprop:design-time-name="45087f61-6350-4dc5-8022-ec5aeae22023" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INGRESO_MENSUAL" msprop:FriendlyName="INGRESO_MENSUAL" msprop:DbColumnName="INGRESO_MENSUAL" msprop:design-time-name="032127a7-17b6-488f-8461-c9a58afec8e5" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CALIFICACION_SISFOH" msprop:FriendlyName="CALIFICACION_SISFOH" msprop:DbColumnName="CALIFICACION_SISFOH" msprop:design-time-name="eefa0d30-ba16-4186-9693-c5eb2ba9d1d2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TIENE_OFICIO_CAPACITACION" msprop:FriendlyName="TIENE_OFICIO_CAPACITACION" msprop:DbColumnName="TIENE_OFICIO_CAPACITACION" msprop:design-time-name="ccfd08c5-03f9-4241-adf6-4871dbf3d36f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="TIENE_CERTIFICADO" msprop:FriendlyName="TIENE_CERTIFICADO" msprop:DbColumnName="TIENE_CERTIFICADO" msprop:design-time-name="a369beee-5980-43d9-aeb9-7b44ca23a019" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SEGUROS" msprop:FriendlyName="SEGUROS" msprop:DbColumnName="SEGUROS" msprop:design-time-name="29143968-de1a-4bd8-8971-cd114b8788f4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CARNET_DE_DISCAPACIDAD" msprop:FriendlyName="CARNET_DE_DISCAPACIDAD" msprop:DbColumnName="CARNET_DE_DISCAPACIDAD" msprop:design-time-name="b63a9fda-6c8c-4b4a-acf7-b423de0dae31" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BENEFICIOS_CONADIS" msprop:FriendlyName="BENEFICIOS_CONADIS" msprop:DbColumnName="BENEFICIOS_CONADIS" msprop:design-time-name="5b0d6dd5-6bea-457d-9944-d17b669575d9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_AYUDA_BIOMECANICAS" />
+          <xs:field xpath="ID_AYUDA_BIOMECANICAS" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_BARRERA_DISCAPACIDAD_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_BARRERA_DISCAPACIDAD" />
+          <xs:field xpath="ID_BARRERA_DISCAPACIDAD" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_CARRERA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_CARRERA" />
+          <xs:field xpath="ID_CARRERA" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DISCAPACIDADES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DISCAPACIDADES" />
+          <xs:field xpath="ID_DISCAPACIDADES" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DISTRITO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DISTRITO" />
+          <xs:field xpath="ID_DISTRITO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_GRADO_ACADEMICO_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_GRADO_ACADEMICO" />
+          <xs:field xpath="ID_GRADO_ACADEMICO" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_INSTITUCIONES_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_INSTITUCIONES" />
+          <xs:field xpath="ID_INSTITUCIONES" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_LUGAR_BARRERA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_LUGAR_BARRERA" />
+          <xs:field xpath="ID_LUGAR_BARRERA" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_METODO_COMUNICACION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_METODO_COMUNICACION" />
+          <xs:field xpath="ID_METODO_COMUNICACION" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_PROVINCIA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_PROVINCIA" />
+          <xs:field xpath="ID_PROVINCIA" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_TIPO_VIVIENDA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_TIPO_VIVIENDA" />
+          <xs:field xpath="ID_TIPO_VIVIENDA" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_VIVIENDA_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_VIVIENDA" />
+          <xs:field xpath="ID_VIVIENDA" />
+        </xs:unique>
+        <xs:keyref name="FK_FACT_VIVIENDA" refer="dbo_DIM_VIVIENDA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_VIVIENDA" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_PROVINCIA" refer="dbo_DIM_PROVINCIA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_PROVINCIA" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_BARRERA_DISCA" refer="dbo_DIM_BARRERA_DISCAPACIDAD_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_BARRERA_DISCAPACIDAD" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_AYUDA_BIOMEC" refer="Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_AYUDA_BIOMECANICAS" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_INSTITUCIONES" refer="dbo_DIM_INSTITUCIONES_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_INSTITUCIONES" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DISCAPACIDADES" refer="dbo_DIM_DISCAPACIDADES_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_DISCAPACIDADES" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DISTRITO" refer="dbo_DIM_DISTRITO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_DISTRITO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_TIPO_VIVIENDA" refer="dbo_DIM_TIPO_VIVIENDA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_TIPO_VIVIENDA" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_METODO_COM" refer="dbo_DIM_METODO_COMUNICACION_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_METODO_COMUNICACION" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_CARRERA" refer="dbo_DIM_CARRERA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_CARRERA" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_GRADO_ACAD" refer="dbo_DIM_GRADO_ACADEMICO_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_GRADO_ACADEMICO" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_LUGAR_BARRERA" refer="dbo_DIM_LUGAR_BARRERA_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_PERSONA_DISCAPACITADO" />
+          <xs:field xpath="ID_LUGAR_BARRERA" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <TBDiscapacidad xmlns="" />
+  </Schema>
+</DataSourceView>

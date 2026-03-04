@@ -1,0 +1,138 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CBDiscapacidad</Database>
+    <Server>LAPTOP-7LQUEKQ5\SQLSERVER</Server>
+    <ConnectionString>Data Source=LAPTOP-7LQUEKQ5\SQLSERVER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>true</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>j68xS1+yGa8GVPN1xfSABX3LwSo=3/01/2026 00:33:282/01/2026 12:28:31</TimeStamp>
+        <ID>
+          <String>CBDiscapacidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>eah92Z7QUchTCf3dt/y5HPpEE6A=2/01/2026 12:33:132/01/2026 12:33:12</TimeStamp>
+        <ID>
+          <String>TBDiscapacidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QNjnsNFWAda5xP81OXReOR51u5I=2/01/2026 13:20:592/01/2026 12:47:48</TimeStamp>
+        <ID>
+          <String>DIM AYUDA BIOMECANICAS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>u+G+YM7N9DH85VD1OLEEgZqN9qw=2/01/2026 13:22:122/01/2026 12:52:11</TimeStamp>
+        <ID>
+          <String>DIM BARRERA DISCAPACIDAD</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xXq7u0wEgULXL+47ugQ4f0BUDnI=2/01/2026 13:22:182/01/2026 12:52:45</TimeStamp>
+        <ID>
+          <String>DIM CARRERA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>M0RfmJ4nxEiW29oe22e8zbvADX4=2/01/2026 13:22:232/01/2026 12:53:11</TimeStamp>
+        <ID>
+          <String>DIM DISCAPACIDADES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ws19Qfqv58BU34wxC0esdja7YY8=2/01/2026 13:22:292/01/2026 12:53:42</TimeStamp>
+        <ID>
+          <String>DIM DISTRITO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>aqXCorNrv9sAaXzfBwRVIE5r2MU=2/01/2026 13:22:332/01/2026 12:54:19</TimeStamp>
+        <ID>
+          <String>DIM GRADO ACADEMICO</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CdDMhymznaiufs5bKZ1Bby2b6Rc=2/01/2026 13:22:372/01/2026 12:54:56</TimeStamp>
+        <ID>
+          <String>DIM INSTITUCIONES</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rSY6Nek9WR4SDTUlesY6seHaHD4=2/01/2026 13:22:412/01/2026 12:56:13</TimeStamp>
+        <ID>
+          <String>DIM LUGAR BARRERA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>M3DY3SuNmXoR16SuZQIrlXGE5qo=2/01/2026 13:22:442/01/2026 12:56:37</TimeStamp>
+        <ID>
+          <String>DIM METODO COMUNICACION</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TdfJC6wb6ZGIAHn4rpUwtOupgPw=2/01/2026 13:22:482/01/2026 12:57:07</TimeStamp>
+        <ID>
+          <String>DIM PROVINCIA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zL7TpYGkyPLfq9qR7cUQ7xjIj8E=2/01/2026 13:22:512/01/2026 12:57:31</TimeStamp>
+        <ID>
+          <String>DIM TIPO VIVIENDA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uo98XKNHrstALRjB8dIFZMY+Y0I=2/01/2026 13:22:562/01/2026 12:58:00</TimeStamp>
+        <ID>
+          <String>DIM VIVIENDA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>PQObxH3msVXrkHhRLYk+KBtkyWo=2/01/2026 15:16:352/01/2026 15:16:35VruB0WCTg5Mpoeoiaegn8kcZtL8=2/01/2026 15:16:352/01/2026 15:16:35</TimeStamp>
+        <ID>
+          <String>TBDiscapacidad</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>+E9B/+q+xjjA/6j2AQLY7RkxcsQ=2/01/2026 12:20:162/01/2026 12:20:15</TimeStamp>
+      <ID>
+        <String>CBDiscapacidad</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2026-01-03T05:42:19.563333Z</LastDeployed>
+</DeploymentSnapshot>

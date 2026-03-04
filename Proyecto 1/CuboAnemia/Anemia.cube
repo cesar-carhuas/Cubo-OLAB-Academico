@@ -1,0 +1,358 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8bd0d63d-149d-47f3-ade3-40337376c248" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Anemia</ID>
+  <Name>Anemia</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="89bed088-2780-4053-a1e0-10934d182942">
+      <ID>DIM SEVERIDAD</ID>
+      <Name>DIM SEVERIDAD</Name>
+      <DimensionID>DIM SEVERIDAD</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d26ff582-6588-4b9d-9fdb-c34f8d51ee5a">
+          <AttributeID>Id Severidad</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="67134520-2f0c-44c8-badb-57aba7ee03ee">
+      <ID>DIM DISTRITO</ID>
+      <Name>DIM DISTRITO</Name>
+      <DimensionID>DIM DISTRITO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8dfc616b-c213-4a81-916b-675777589d68">
+          <AttributeID>Id Distrito</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="23a02e49-9b00-4f37-9203-54b5ec15e498">
+      <ID>DIM DIAGNOSTICO</ID>
+      <Name>DIM DIAGNOSTICO</Name>
+      <DimensionID>DIM DIAGNOSTICO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="51555731-9db8-4173-a5c2-69d2f7615181">
+          <AttributeID>Id Diagnostico</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5b75b5b0-8460-4cb3-ae85-36da38e3a5d5">
+      <ID>DIM PROVINCIA</ID>
+      <Name>DIM PROVINCIA</Name>
+      <DimensionID>DIM PROVINCIA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5b6881c0-8edf-4051-8e5b-f52628025519">
+          <AttributeID>Id Provincia</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a1ad50d1-e14d-4781-ab3d-722b6b9addae">
+      <ID>DIM TIEMPO</ID>
+      <Name>DIM TIEMPO</Name>
+      <DimensionID>DIM TIEMPO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bc949401-e92d-4a33-ae0d-e363cd1f9819">
+          <AttributeID>Id Tiempo</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d20c675-7bed-4287-a07a-809fe22d811f">
+          <AttributeID>Dia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f88d82e-c4af-4b8b-89ba-eb929c5e4e79">
+          <AttributeID>Mes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="115516b6-6ecc-4d51-9a51-3eb0f7adde60">
+          <AttributeID>Years</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0a487797-b6df-46c1-af53-9571f8e363fb">
+          <HierarchyID>Jerarquía</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9b55ccad-8497-4b0f-9138-e1308265a610">
+      <ID>DIM ETNIA</ID>
+      <Name>DIM ETNIA</Name>
+      <DimensionID>DIM ETNIA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="71e8c408-ebdc-4f5a-ae2d-55c4958b9702">
+          <AttributeID>Id Etnia</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="bb97059e-f846-48b4-9096-0a992246a5d2">
+      <ID>DIM SEGURO</ID>
+      <Name>DIM SEGURO</Name>
+      <DimensionID>DIM SEGURO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9e840da8-6af0-4e6d-b122-2ddf7aa3ba20">
+          <AttributeID>Id Seguro</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2ac28485-d20c-4a72-8447-982742c2e086">
+      <ID>DIM ESTABLECIMIENTO</ID>
+      <Name>DIM ESTABLECIMIENTO</Name>
+      <DimensionID>DIM ESTABLECIMIENTO</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7de42606-ae7c-4d38-81ce-afb02820d3ec">
+          <AttributeID>Codigo Unico</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="cc6e0667-6ec8-41d6-8770-a505885b9d10">
+      <ID>FACT PACIENTE ANEMIA</ID>
+      <Name>FACT PACIENTE ANEMIA</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ee58f9df-92c6-4244-b15c-74f0ca74d63a">
+          <ID>PK Registro</ID>
+          <Name>PK Registro</Name>
+          <Source dwd:design-time-name="ed54ff59-1a30-4432-814c-4425d0e354d3">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5df49886-e426-47e9-ab21-01045316d41e">
+              <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+              <ColumnID>PK_registro</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c0117b75-ca43-4a63-b899-cf373c5962be">
+          <ID>Edad</ID>
+          <Name>Edad</Name>
+          <Source dwd:design-time-name="1016b773-07a5-4564-a94f-5861bf41ae55">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="73c0fa5b-33e8-430e-a805-4e0e169218bd">
+              <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+              <ColumnID>edad</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f38bacf8-adee-41fe-ab69-f658ad0db09a">
+          <ID>Cantidad</ID>
+          <Name>Cantidad</Name>
+          <Source dwd:design-time-name="6de08aed-8e89-4bfd-b738-d23a365b7674">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a8a25ae3-d970-4f0e-b441-8fe6c3c956d7">
+              <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+              <ColumnID>cantidad</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="35737e69-901b-40e0-b7cd-822cd958730b">
+          <ID>Recuento FACT PACIENTE ANEMIA</ID>
+          <Name>Recuento FACT PACIENTE ANEMIA</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="54553115-ec76-452a-8fa8-682daaa01128">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f94a68d4-9c3e-4b5d-89b2-705e9f064330">
+              <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4cba3a17-9bd9-4bf0-9723-ae0be05d0a8a">
+          <CubeDimensionID>DIM SEVERIDAD</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5dad3b74-7e62-4990-9453-9b33a5947800">
+              <AttributeID>Id Severidad</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="69032660-6443-4459-a526-04b9a7bba56f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d4ffd5ee-7804-4ccf-a494-652df073961a">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_severidad</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f7d8cd8e-de6f-4ad3-92b3-c6fdc3dad9ee">
+          <CubeDimensionID>DIM DISTRITO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e6738517-7ece-4e3f-9e2d-a2675af4e47a">
+              <AttributeID>Id Distrito</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="238707a9-8901-451c-b0bc-9827fa2f12b2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6ef80107-4611-4a28-8068-efcc74b1ae8a">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_distrito</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="13e31c0c-7a2b-4dd5-b4c1-d84852a24928">
+          <CubeDimensionID>DIM DIAGNOSTICO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="42d9b361-4175-4d7b-a954-92cf4ab44559">
+              <AttributeID>Id Diagnostico</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b234d4f1-0402-42ed-b8c7-447a1760e299">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="093c62dd-57c5-4613-8eaa-35c035986af5">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_diagnostico</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fc0731f5-fe19-4597-8099-03ac76cc5530">
+          <CubeDimensionID>DIM PROVINCIA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="80cbf956-0ef8-4944-a1f3-6758f9d6737d">
+              <AttributeID>Id Provincia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="dd16d082-6819-40b2-a365-0883332432d1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cdc5ebbc-52fa-43ec-8597-56c03a0ac608">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_provincia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="987c8296-b0e3-48f0-af6d-193fed96ba20">
+          <CubeDimensionID>DIM TIEMPO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0d30a205-f90c-430b-8837-e9171c764b9e">
+              <AttributeID>Id Tiempo</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="645d47b6-3808-447a-97f4-073e78b61d93">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dde36bd1-b71a-4d07-a2c9-d93f3c827fd8">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_tiempo</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="654382d7-61cc-4e25-a261-645026655b21">
+          <CubeDimensionID>DIM ETNIA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fb3e0248-fdc2-47ce-b61b-44b47c96ad7d">
+              <AttributeID>Id Etnia</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9731666e-5587-4ce4-973f-048731a1e04f">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="936ec9dd-296f-4c8d-a2a8-4b4b3b64f47a">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_etnia</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5c22520e-cd0a-4f3c-af4b-d82693eb2e80">
+          <CubeDimensionID>DIM SEGURO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="36346fa3-c784-4039-9928-ade2e5cb4ba3">
+              <AttributeID>Id Seguro</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f994947d-3976-44f4-ac60-ec6ae18b4d34">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5a0ac515-e04c-4ba2-ba33-fdadbf12bbed">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>id_seguro</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="3db0fb5c-4149-4955-9e71-1475cd48d577">
+          <CubeDimensionID>DIM ESTABLECIMIENTO</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="10d9251f-c32f-4231-98da-93b77a82a9bd">
+              <AttributeID>Codigo Unico</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9d32cfde-abe5-4bf9-8cf8-04a0af59a6ab">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="246190a9-d18d-4c79-9b9e-3f4dc454c3f5">
+                    <TableID>dbo_FACT_PACIENTE_ANEMIA</TableID>
+                    <ColumnID>codigo_unico</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8f210da0-3ad0-4df9-a5e4-075f895faacb">
+    <DataSourceViewID>Anemia</DataSourceViewID>
+  </Source>
+</Cube>
